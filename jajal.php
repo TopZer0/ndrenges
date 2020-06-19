@@ -1,5 +1,5 @@
 <?php
-date_default_timezone_set('Asia/Surabaya');
+date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 ulang:
 // function change(){
@@ -47,7 +47,7 @@ echo color("white","                  Nulis nomer e 62** bla bla \n");
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("white","+] Your access token : ".$token."\n\n");
         save("token.txt",$token); 
-        echo color("white","\n▬▬▬▬▬▬▬▬▬▬▬▬CLAIM VOUCHER▬▬▬▬▬▬▬▬▬▬▬▬");
+        echo color("white","\n▬▬▬▬▬▬▬▬▬▬▬▬SEK ENTENI DILUT CUK▬▬▬▬▬▬▬▬▬▬▬▬");
         echo "\n".color("white","CLAIM A..");
         echo "\n".color("white"," Please wait");
         for($a=1;$a<=3;$a++){
@@ -82,6 +82,20 @@ echo color("white","                  Nulis nomer e 62** bla bla \n");
         echo color("white",".");
         sleep(3);
         }
+		        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GFBARUSBY"}');
+        $message = fetch_value($code1,'"message":"','"');
+        if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
+        echo "\n".color("green","Message: ".$message);
+        goto gofood;
+        }else{
+        echo "\n".color("white"," Message: ".$message);
+        gofood:
+        echo "\n".color("white"," CLAIM D..");
+        echo "\n".color("white"," Please wait");
+        for($a=1;$a<=3;$a++){
+        echo color("white",".");
+        sleep(3);
+        }
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PAKEGOFOOD0906"}');
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD0906"}');
         $message = fetch_value($code1,'"message":"','"');
@@ -94,6 +108,7 @@ echo color("white","                  Nulis nomer e 62** bla bla \n");
         }
         sleep(3);
         $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD0906"}');
+	$boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GFBARUSBY"}');
         $messageboba09 = fetch_value($boba09,'"message":"','"');
         echo "\n".color("white"," Message: ".$messageboba09);
         sleep(1);
