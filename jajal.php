@@ -180,18 +180,18 @@ echo color("white","                  Format Input Kudu 62*** Bla Bla \n");
          }else if($pilih1 == "n" || $pilih1 == "N"){
          die();
          }else{
-         echo color("white","-] GAGAL!!!\n");
+         echo color("white","-] GAGAL COK!!!\n");
          }
          }
          }
          }else{
-         echo color("white","-] OTP SALAH");
+         echo color("white","-] OTP SALAH GOBLOK!!!");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
-         echo color("white","!] INPUT ULANG..\n");
+         echo color("white","!] INPUT MANEH COK\n");
          goto otp;
          }
          }else{
-         echo color("white","-] NOMOR SALAH");
+         echo color("white","-] NOMOR SALAH GOBLOK!!!");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
          echo color("white","!] MASUKAN LAGI\n");
          goto ulang;
