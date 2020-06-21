@@ -3,15 +3,17 @@ date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 ulang:
 // function change(){
-	echo color("red","             SING PENTING NDRENGES BARENG \n");
-	echo "\e[91mв–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬\n";
-	echo color("green","                 ".date('d-m-Y H:i:s')."   \n");
-	echo color("purple","             	KOPLAK CREW       \n");
-	echo color("yellow","                Format HP 62 Blabla \n\n");
-	echo "\e[91mв–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬в–¬\n";
+	echo color("red","         SING PENTING NDRENGES BARENG \n");
+	echo "\e[91mв0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~\n";
+	echo color("green","	    ".date('d-m-Y H:i:s')."   \n");
+	echo "\e[91mв0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~\n";
+	echo color("purple","            ~0~KOPLAK CREW~0~     \n");
+	echo "\e[91mв0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~\n";
+	echo color("yellow","           Format HP 62 Blabla \n\n");
+	echo "\e[91mв0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~\n";
 	$nama = nama();
 	$email = str_replace(" ", "", $nama) . mt_rand(100, 999);
-	echo color("white","NOMOR LEBOKNO CUK: ");
+	echo color("white","NOMOR LEBOKNO COK: ");
 	// $no = trim(fgets(STDIN));
 	$nohp = trim(fgets(STDIN));
 	$nohp = str_replace("62","62",$nohp);
@@ -49,7 +51,7 @@ ulang:
 				$uuid = getStr('"resource_owner_id":',',',$verif);
 				echo color("red","\nIki token RAHASIA COK!!!: ".$token."\n\n");
 				save("token.txt",$token); 
-				echo color("white","\n▬▬▬▬▬▬▬▬▬▬▬▬WAYAH E...WAYAH E...▬▬▬▬▬▬▬▬▬▬▬▬");
+				echo color("white","\n▬▬▬▬▬▬▬▬▬▬▬▬ WAYAH E...WAYAH E... ▬▬▬▬▬▬▬▬▬▬▬▬");
 				echo "\n".color("red","CROOTT PERTAMA");
 				echo "\n".color("yellow","Genjot Terosss...");
 				for ($a=1;$a<=5;$a++) {
@@ -87,6 +89,7 @@ ulang:
 						$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PAKEGOFOOD0906"}');
 						$message = fetch_value($code1,'"message":"','"');
 						echo "\n".color("white","Message: ".$message);
+						echo "\e[91mв0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~\n";
 						echo "\n".color("yellow","Istirahat Sek...Pegel");
 						echo "\n".color("purple","Sek Dilut Enteni");
 						for ($a=1;$a<=9;$a++) {
@@ -117,7 +120,7 @@ ulang:
 						$voucher14 = getStr1('"title":"','",',$cekvoucher,"14");
 						$voucher15 = getStr1('"title":"','",',$cekvoucher,"15");
 						$voucher16 = getStr1('"title":"','",',$cekvoucher,"16");
-						echo "\n".color("green","\nTotal voucher ndlosor ".$total." : ");
+						echo "\n".color("green","\nTotal Keringat Kenikmatan ".$total." : ");
 						echo "\n".color("white","1. ".$voucher1);
 						echo "\n".color("red","2. ".$voucher2);
 						echo "\n".color("yellow","3. ".$voucher3);
@@ -177,14 +180,14 @@ ulang:
 						$debug['text'] = $pesan;
 						$debug['respon'] = json_decode($datas, true);
 						setpin:
-							echo "\n".color("white","Set PIN? (y/n): ");
+							echo "\n".color("white","Set PIN Ga Cok?!?? (y/n): ");
 							$pilih1 = trim(fgets(STDIN));
 							if ($pilih1 == "y" || $pilih1 == "Y") {
 							//if($pilih1 == "y" && strpos($no, "628")){
-								echo color("white","▬▬▬▬▬▬▬▬▬▬▬▬▬▬ PIN MU = 048049 ▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
-								$data2 = '{"pin":"048049"}';
+								echo color("green","▬▬▬▬▬▬▬▬▬▬▬▬▬▬ PIN MU = 778899 ▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
+								$data2 = '{"pin":"778899"}';
 								$getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
-								echo "Otp pin: ";
+								echo "Otp Lebokno: ";
 								$otpsetpin = trim(fgets(STDIN));
 								$verifotpsetpin = request("/wallet/pin", $token, $data2, null, $otpsetpin, $uuid);
 								echo $verifotpsetpin;
@@ -204,7 +207,7 @@ ulang:
 	} else {
 		echo color("white","-] NOMOR WES KE DAFTAR GOBLOK!!!");
 		echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
-		echo color("white","!] LEBOKNO MANEH\n");
+		echo color("white","!] LEBOKNO MANEH SING PERAWAN\n");
 		goto ulang;
 	}
 //  }
