@@ -5,7 +5,7 @@ ulang:
 // function change(){
 echo color("red","           POKOK ISOK NDRENGES BARENG COK \n");
 echo color("green","           Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
-echo color("white","                    Never Extinct         \n");
+echo color("yellow","                    KOPLAK CREW         \n");
 echo color("white","           Format Input Kudu 62*** Bla Bla \n");
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
@@ -58,7 +58,7 @@ echo color("white","           Format Input Kudu 62*** Bla Bla \n");
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EATLAH"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
-        echo "\n".color("yellow","Message: ".$message);
+        echo "\n".color("green","Message: ".$message);
         goto gocar;
         }else{
         echo "\n".color("white"," Message: ".$message);
