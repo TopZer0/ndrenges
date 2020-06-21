@@ -3,14 +3,14 @@ date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 ulang:
 // function change(){
-	echo color("red","         SING PENTING NDRENGES BARENG \n");
+	echo color("blue","         	SING PENTING NDRENGES BARENG \n");
 	echo "\e[91mв0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~\n";
-	echo color("green","	    ".date('d-m-Y H:i:s')."   \n");
+	echo color("green","	    	".date('d-m-Y H:i:s')."   \n");
 	echo "\e[91mв0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~\n";
-	echo color("purple","            ~0~KOPLAK CREW~0~     \n");
+	echo color("purple","            	~0~KOPLAK CREW~0~     \n");
 	echo "\e[91mв0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~\n";
-	echo color("yellow","           Format HP 62 Blabla \n\n");
-	echo "\e[91mв0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~\n";
+	echo color("yellow","           	Format HP 62 Blabla \n");
+	echo "\e[91mв0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~\n\n";
 	$nama = nama();
 	$email = str_replace(" ", "", $nama) . mt_rand(100, 999);
 	echo color("white","NOMOR LEBOKNO COK: ");
@@ -88,8 +88,7 @@ ulang:
 						}
 						$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PAKEGOFOOD0906"}');
 						$message = fetch_value($code1,'"message":"','"');
-						echo "\n".color("white","Message: ".$message);
-						echo "\e[91mв0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~0~\n";
+						echo "\n".color("white","Message: ".$message\n\n);
 						echo "\n".color("yellow","Istirahat Sek...Pegel");
 						echo "\n".color("purple","Sek Dilut Enteni");
 						for ($a=1;$a<=9;$a++) {
