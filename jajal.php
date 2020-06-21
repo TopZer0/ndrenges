@@ -3,10 +3,10 @@ date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 ulang:
 // function change(){
-echo color("red","             POKOK ISOK NDRENGES BARENG COK \n");
+echo color("red","           POKOK ISOK NDRENGES BARENG COK \n");
 echo color("green","           Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
 echo color("white","                    Never Extinct         \n");
-echo color("white","                  Format Input Kudu 62*** Bla Bla \n");
+echo color("white","           Format Input Kudu 62*** Bla Bla \n");
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
         echo color("white"," NOMOR HP COK  : ");
@@ -46,7 +46,7 @@ echo color("white","                  Format Input Kudu 62*** Bla Bla \n");
         echo color("green","ALHAMDULILLAH BERHASIL COK\n");
         $token = getStr('"access_token":"','"',$verif);
         $uuid = getStr('"resource_owner_id":',',',$verif);
-        echo color("red","+] Your access token : ".$token."\n\n");
+        echo color("red","+] Akses Rahasia Iki Cok : ".$token."\n\n");
         save("token.txt",$token); 
         echo color("green","\n▬▬▬▬▬▬▬▬▬▬▬▬ENTENI SABAR COK▬▬▬▬▬▬▬▬▬▬▬▬");
         echo "\n".color("white"," CROTT PERTAMA");
@@ -64,7 +64,7 @@ echo color("white","                  Format Input Kudu 62*** Bla Bla \n");
         echo "\n".color("white"," Message: ".$message);
 	gocar:
         echo "\n".color("red"," CROTT KEDUA");
-        echo "\n".color("white"," Sek Lemes");
+        echo "\n".color("yellow"," Sek Lemes");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
         sleep(35);
@@ -78,7 +78,7 @@ echo color("white","                  Format Input Kudu 62*** Bla Bla \n");
         echo "\n".color("white"," Message: ".$message);
         gofood:
         echo "\n".color("green"," CROTT KETIGA");
-        echo "\n".color("Red"," Sek Lemes");
+        echo "\n".color("yellow"," Sek Tambah Lemes");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
         sleep(3);
@@ -173,27 +173,27 @@ echo color("white","                  Format Input Kudu 62*** Bla Bla \n");
          echo color("white","▬▬▬▬▬▬▬▬▬▬▬▬▬▬ PIN MU = 112233 ▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
          $data2 = '{"pin":"112233"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
-         echo "Otp pin: ";
+         echo "Otp PIN Cok: ";
          $otpsetpin = trim(fgets(STDIN));
          $verifotpsetpin = request("/wallet/pin", $token, $data2, null, $otpsetpin, $uuid);
          echo $verifotpsetpin;
          }else if($pilih1 == "n" || $pilih1 == "N"){
          die();
          }else{
-         echo color("white","-] GAGAL COK!!!\n");
+         echo color("red","-] GAGAL COK!!!\n");
          }
          }
          }
          }else{
-         echo color("white","-] OTP SALAH GOBLOK!!!");
+         echo color("red","-] OTP SALAH GOBLOK!!!");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
          echo color("white","!] INPUT MANEH COK\n");
          goto otp;
          }
          }else{
-         echo color("white","-] NOMOR SALAH GOBLOK!!!");
+         echo color("white","-] NOMOR SALAH GOBLOK NOMOR BUSUK!!!");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
-         echo color("white","!] MASUKAN LAGI\n");
+         echo color("white","!] LEBOKNO MANEH PELAN-2\n");
          goto ulang;
          }
 //  }
