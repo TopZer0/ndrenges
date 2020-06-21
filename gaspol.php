@@ -4,8 +4,7 @@ include "function.php";
 ulang:
 // function change(){
 	echo color("blue","                   AYO NDRENGES BARENG \n");
-	echo "\e[99m______________\e[99m".date('[d-m-Y] [H:i:s]')."\e[99m________________\n";
-	echo color("green","                ".date('d-m-Y H:i:s')."   \n");
+	echo "\e[99m__________________\e[99m".date('[d-m-Y] [H:i:s]')."\e[99m________________\n";
 	echo "\e[92m  ==============================================\n";
 	echo color("white","                   ~0~ KOPLAK CREW ~0~     \n");
 	echo "\e[92m  ==============================================\n";
@@ -48,9 +47,11 @@ ulang:
 				echo color("green","ALHAMDULILLAH BERHASIL MENDAFTAR\n");
 				$token = getStr('"access_token":"','"',$verif);
 				$uuid = getStr('"resource_owner_id":',',',$verif);
-				echo color("white","\nYour access token: ".$token."\n\n");
+				echo color("red","\nIki Token RAHASIA COK!!!: ".$token."\n\n");
 				save("token.txt",$token); 
-				echo color("red","\n▬▬▬▬▬▬▬▬▬▬▬▬ Wayah e...Wayah e... ▬▬▬▬▬▬▬▬▬▬▬▬");
+				echo "\e[99m  ==============================================\n";
+				echo color("yellow","\n▬▬▬▬▬▬▬▬▬▬▬▬ Wayah e...Wayah e... ▬▬▬▬▬▬▬▬▬▬▬▬");
+				echo "\e[99m  ==============================================\n";
 				echo "\n".color("green","CROOT PERTAMA");
 				echo "\n".color("blue","Genjot terusss...");
 				for ($a=1;$a<=5;$a++) {
@@ -88,6 +89,7 @@ ulang:
 						$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PAKEGOFOOD0906"}');
 						$message = fetch_value($code1,'"message":"','"');
 						echo "\n".color("white","Message: ".$message);
+						echo "\e[92m  ==============================================\n";
 						echo "\n".color("green","SEK PEGEL KERINGETAN");
 						echo "\n".color("blue","ENTENI DILUT COK");
 						for ($a=1;$a<=9;$a++) {
@@ -118,7 +120,7 @@ ulang:
 						$voucher14 = getStr1('"title":"','",',$cekvoucher,"14");
 						$voucher15 = getStr1('"title":"','",',$cekvoucher,"15");
 						$voucher16 = getStr1('"title":"','",',$cekvoucher,"16");
-						echo "\n".color("red","\nTotal voucher ".$total." : ");
+						echo "\n".color("white","\nNah iki total voucher mu : ".$total." : ");
 						echo "\n".color("blue","1. ".$voucher1);
 						echo "\n".color("yellow","2. ".$voucher2);
 						echo "\n".color("green","3. ".$voucher3);
